@@ -6,18 +6,18 @@
 N = input("Введите размер списка: ")
 R = input("Введите целое число: ")
 while type(N) != int:
- try:
-  N = int(N)
- except ValueError:
-   print('Неправильно')
-   N = input('Введите размер списка: ')
+    try:
+        N = int(N)
+    except ValueError:
+        print('Неправильно')
+        N = input('Введите размер списка: ')
 
 while type(R) != int:
- try:
-  R = int(R)
- except ValueError:
-   print('Неправильно')
-   R = input('Введите целое число: ')
+    try:
+        R = int(R)
+    except ValueError:
+        print('Неправильно')
+        R = input('Введите целое число: ')
 
 A = []
 b = 0
@@ -28,8 +28,8 @@ K = 1
 K2 = 2
 i = 1
 i2 = 2
-for i in range (N):
-    for i2 in range (N):
+for i in range(N):
+    for i2 in range(N):
         if abs(A[i] + A[i2] - R) < abs(A[K] + A[K2] - R):
             K = i
             K2 = i2

@@ -4,11 +4,11 @@
 
 N = input("Введите размер списка: ")
 while type(N) != int:
- try:
-  N = int(N)
- except ValueError:
-   print('Нужно ввести целое число')
-   N = input('Введите размер списка: ')
+    try:
+        N = int(N)
+    except ValueError:
+        print('Нужно ввести целое число')
+        N = input('Введите размер списка: ')
 
 A = []
 b = 0
