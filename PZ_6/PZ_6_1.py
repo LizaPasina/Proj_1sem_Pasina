@@ -11,7 +11,13 @@ while i < 10:
     i += 1
 print("Список:", A)
 K = 0
+T = 8
 for i in range(1, N-1):
     if (A[0] < A[i]) and (A[i] < A[9]):
         K = i
-print('Порядковый номер:', K + 1)
+    else:
+        T =- 1
+if T <= 0:
+    print(0)
+else:
+    print('Порядковый номер:', K + 1)
