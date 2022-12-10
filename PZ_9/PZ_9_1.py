@@ -8,3 +8,4 @@ S1 = S.values()
 f = list(S1)
 f.sort(key=None, reverse=True)
 print("Наибольший рост:", f[0], "Наименьший рост:", f[-1])
+
