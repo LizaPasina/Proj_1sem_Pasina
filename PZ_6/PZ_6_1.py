@@ -16,7 +16,7 @@ for i in range(1, N-1):
     if (A[0] < A[i]) and (A[i] < A[9]):
         K = i
     else:
-        T =- 1
+        T = T - 1
 if T <= 0:
     print(0)
 else:

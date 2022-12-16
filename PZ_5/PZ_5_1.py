@@ -8,7 +8,7 @@ def nums():
     c = (num % 1000) // 100
     d = (num % 100) // 10
     e = (num % 100) % 10
-    if (b == c) or (b == d) or (b == e) or (c == d) or (c == e):
+    if (b == c) or (b == d) or (b == e) or (c == d) or (c == e) or (e == d):
         print('есть одинаковые цифры')
     else: print('нет одинаковых цифр')
 
