@@ -14,6 +14,7 @@ for i in open('text18-18.txt', encoding='UTF-8'):
         d = d + 1
         a = a + 1
 print(end='\n')
+
 print('Количество строк: ', t, end='\n')
 print('Количество знаков препинания : ', d, end='\n')
 f1 = open('text18-18.txt', encoding='UTF-8')
