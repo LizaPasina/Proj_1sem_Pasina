@@ -1,7 +1,11 @@
 # В матрице элементы кратные 3 увеличить в 3 раза
-n = 3
-m = 2
+
 a = []
-for i in range(n):
-    a.append(list(map(int, input().split())))
+tut = int(input("введите кол-во строк матрицы: "))
+tam = int(input("введите элементы матрицы: "))
+for i in range(tut):
+    b = []
+    for j in range(tam):
+        b.append(j)
+    a.append(b)
 print(a)
