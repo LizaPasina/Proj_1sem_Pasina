@@ -1,11 +1,15 @@
 # В матрице элементы кратные 3 увеличить в 3 раза
+import random
 
-a = []
-tut = int(input("введите кол-во строк матрицы: "))
-tam = int(input("введите элементы матрицы: "))
-for i in range(tut):
-    b = []
-    for j in range(tam):
-        b.append(j)
-    a.append(b)
-print(a)
+ch = 0
+b = []
+while ch < 5:
+    a = [random.randint(-15,15) for n in range(random.randint(1,7))]
+    b.append(a)
+    ch += 1
+print(b)
+# s = [f for f in b if f % 3 == 0]
+s = []
+for i in b:
+    s.append(b[i] % 3 == 0)
+print(s)
