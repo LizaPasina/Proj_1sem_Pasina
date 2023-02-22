@@ -4,12 +4,11 @@ import random
 ch = 0
 b = []
 while ch < 5:
-    a = [random.randint(-15,15) for n in range(random.randint(1,7))]
+    a = [random.randint(-15,15) for n in range(1,7)]
     b.append(a)
     ch += 1
 print(b)
-# s = [f for f in b if f % 3 == 0]
-s = []
 for i in b:
-    s.append(b[i] % 3 == 0)
-print(s)
+  if b[i] % 3 == 0:
+    b[i] = b[i] * 3
+print(b)
