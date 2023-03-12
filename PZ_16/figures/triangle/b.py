@@ -1,26 +1,12 @@
 import math
 
-def triangle_perimeter(a,b,c):
+a1 = 7
+b1 = 2
+c1 = 8
+def triangle_perimeter(a = a1, b = b1, c = c1):
     pr = a + b + c
-    return pr
-def triangle_area(a,b,c):
+    return(pr)
+def triangle_area(a = a1, b = b1, c = c1):
     p = (a + b + c) / 2
-    s = (p * (p - a) * (p - b) * (p - c)) * 0.5
-    return s
-
-a = input("Вы хотите ввести сторону треугольника? ")
-if a == "да":
-    a = float(input("Введите сторону треугольника: "))
-else: a = 7
-
-b = input("Вы хотите ввести сторону треугольника? ")
-if b == "да":
-    b = float(input("Введите сторону треугольника: "))
-else: b = 2
-
-c = input("Вы хотите ввести сторону треугольника? ")
-if c == "да":
-    c = float(input("Введите сторону треугольника: "))
-else: c = 8
-
-print("Периметр треугольника:", triangle_perimeter(a,b,c), "Площадь треугольника:", triangle_area(a,b,c))
+    s = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    return(s)
