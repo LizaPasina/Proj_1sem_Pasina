@@ -201,13 +201,6 @@ with sq.connect('optovaya_baza.db') as con:
 #     cur.execute("UPDATE kolichestvo SET kolvo=kolvo+10 WHERE tovari_id=5")
 
 
-# 10 недоделано
-# with sq.connect('optovaya_baza.db') as con:
-#     cur = con.cursor()
-#     cur.execute("UPDATE name SET 'Фасоль' FROM magazini INNER JOIN zayavki_magazinov ON magazini.id=zayavki_magazinov.id WHERE zayavki_magazinov.id=22")
-#     cur.execute("UPDATE adress SET 'ул. Ленина 34/1' WHERE zayavki_magazinov.id=22")
-
-
 # 1 удаление
 # with sq.connect('optovaya_baza.db') as con:
 #     cur = con.cursor()
@@ -227,12 +220,6 @@ with sq.connect('optovaya_baza.db') as con:
 #      cur.execute("DELETE FROM zayavki_magazinov WHERE id IN (SELECT id FROM magazini WHERE adress LIKE 'ул. Мазилина%')")
 
 
-# 4
-# with sq.connect('optovaya_baza.db') as con:
-#     cur = con.cursor()
-#     cur.execute("DELETE FROM zayavki_magazinov WHERE id IN(5,7)")
-
-
 # 5
 # with sq.connect('optovaya_baza.db') as con:
 #     cur = con.cursor()
@@ -250,8 +237,3 @@ with sq.connect('optovaya_baza.db') as con:
 #     cur = con.cursor()
 #     cur.execute("DELETE FROM kolichestvo WHERE id IN (SELECT id FROM sostav WHERE id_zayavki=0)")
 
-
-# 8
-# with sq.connect('optovaya_baza.db') as con:
-#     cur = con.cursor()
-#     cur.execute("DELETE FROM sostav WHERE id IN")
